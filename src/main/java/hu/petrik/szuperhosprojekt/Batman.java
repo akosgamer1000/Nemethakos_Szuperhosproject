@@ -13,7 +13,7 @@ public class Batman implements Szuperhos,Milliardos{
 
     @Override
     public double mekkoraAzEreje() {
-        return  (lelemenyesseg * 2);
+        return  lelemenyesseg * 2;
     }
     @Override
     public void kutyutKeszit() {

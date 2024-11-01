@@ -30,17 +30,24 @@ public abstract class Bosszuallo implements Szuperhos {
 
     @Override
     public boolean legyoziE(Szuperhos z) {
+        System.out.println("hello2");
+        if (z instanceof Bosszuallo) {
+            Bosszuallo ellenfel = (Bosszuallo) z;
+            if(ellenfel.isVanEGyengesege() && this.szuperero > ellenfel.mekkoraAzEreje()){
+                return true;
+            }
 
-        if(z instanceof Bosszuallo) {
-           Bosszuallo ellenfel = (Bosszuallo) z;
-            if (ellenfel.isVanEGyengesege() && this.szuperero > ellenfel.mekkoraAzEreje()) {
+        } else if (z instanceof Batman) {
+            Batman s = (Batman) z;
+            System.out.printf("hello");
+            if(this.szuperero > (2 * s.mekkoraAzEreje())){
                 return true;
             }
 
         }
-
-
         return false;
+
+
     }
 
     @Override
