@@ -10,5 +10,13 @@ public class Main {
             } catch (IOException e) {
                 System.out.println("hibas fajlnev");
             }
+
+                if(Kepregeny.szuperhosLista.isEmpty()){
+                    System.out.println("hiba a netöltésben");
+                }
+                else{
+                    Kepregeny.szuperhosok();
+                }
+
     }
 }
