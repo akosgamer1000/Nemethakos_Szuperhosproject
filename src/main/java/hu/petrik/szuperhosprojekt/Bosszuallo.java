@@ -40,7 +40,7 @@ public abstract class Bosszuallo implements Szuperhos {
         } else if (z instanceof Batman) {
             Batman s = (Batman) z;
             System.out.printf("hello");
-            if(this.szuperero > (2 * s.mekkoraAzEreje())){
+            if(this.szuperero >= (2 * s.mekkoraAzEreje())){
                 return true;
             }
 
